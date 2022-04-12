@@ -39,7 +39,7 @@ variable "access_logs_enabled" {
 variable "access_logs_bucket" {
   description = "The S3 bucket to store LB access logs in."
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "ssl_policy" {
