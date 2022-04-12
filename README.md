@@ -25,7 +25,6 @@ module "external_alb" {
   source  = "7Factor/app-load-balancer/aws"
   version = "1.0.0"
 
-  vpc_id           = data.aws_vpc.primary_vpc.id
   cluster_name     = var.cluster_name
   app_name         = var.app_name
   security_groups  = [data.aws_security_group.primary_sg.id]
