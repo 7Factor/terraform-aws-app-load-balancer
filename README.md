@@ -1,4 +1,4 @@
-# AWS Application Load Balancer
+# AWS ECS App Load Balancer
 
 This module will allow you to deploy an application load balancer intended for use with an ECS Service. This is intended
 to be run as part of your app deployment pipeline. It works well with [Concourse.](https://concourse-ci.org) It is
