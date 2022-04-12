@@ -8,11 +8,10 @@ applications behind a load balancer with SSL termination and redirection from po
 
 ## Prerequisites
 
-First, you need a decent understanding of how to use
-Terraform. [Hit the docs](https://www.terraform.io/intro/index.html) for that. Then, you should familiarize yourself
-with ECS [concepts](https://aws.amazon.com/ecs/getting-started/), especially if you've never worked with a clustering
-solution before. Once you're good, import this module and pass the appropriate variables. Then, plan your run and
-deploy.
+First, you need a decent understanding of how to use Terraform.
+[Hit the docs](https://www.terraform.io/intro/index.html) for that. Then, you should familiarize yourself with ECS
+[concepts](https://aws.amazon.com/ecs/getting-started/), especially if you've never worked with a clustering solution 
+before. Once you're good, import this module and pass the appropriate variables. Then, plan your run and deploy.
 
 We also assume that you're deploying an application behind an ALB to port 443 (a really good idea). We will ask for your
 certificate ARN and automagically configure an HTTP to HTTPS redirect on the ALB. If you need more interesting features
